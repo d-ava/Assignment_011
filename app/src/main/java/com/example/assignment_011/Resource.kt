@@ -1,9 +1,13 @@
 package com.example.assignment_011
 
+import com.example.assignment_011.model.Item
+
 sealed class Resource<out T>(
     val data: T? = null,
     val message: String? = null,
-    val loading: Boolean = false
+    val loading: Boolean = false,
+   // val empty: T? = null
+
 ) {
     class Success<T>(data: T) : Resource<T>(data = data)
     class Error<T>(message: String, data: T? = null) : Resource<T>(
@@ -12,4 +16,6 @@ sealed class Resource<out T>(
     )
 
     class Loading<T>(load: Boolean) : Resource<T>(loading = load)
+
 }
+

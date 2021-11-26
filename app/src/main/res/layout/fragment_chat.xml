@@ -2,7 +2,7 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
     tools:context=".ui.ChatFragment">
@@ -10,8 +10,22 @@
   <androidx.appcompat.widget.AppCompatButton
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="@string/load"
+      android:text="LOAD NOT WORKING"
       android:id="@+id/btnLoad"/>
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="LOAD WORKING"
+      android:id="@+id/btnLoad2"/>
+
+  <ProgressBar
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:id="@+id/progressBar"
+      android:visibility="invisible"
+    android:layout_gravity="center"/>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

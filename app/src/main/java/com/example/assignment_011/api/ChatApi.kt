@@ -8,6 +8,6 @@ import retrofit2.http.GET
 interface ChatApi {
 
     @GET(API_KEY)
-    suspend fun getChat():Response<Item>
+    suspend fun getChat():Response<List<Item>>
 
 }

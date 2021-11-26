@@ -17,11 +17,11 @@ data class Item(
     @Json(name = "avatar")
     val avatar: String,
     @Json(name = "message_type")
-    val messageType: String,
+    val messageType: String?,
     @Json(name = "last_message")
-    val lastMessage: String,
+    val lastMessage: String?,
     @Json(name = "unrea_message")
-    val unreaMessage: Int,
+    val unreaMessage: Int?,
     @Json(name = "is_typing")
-    val isTyping: Boolean
+    val isTyping: Boolean?
 )
